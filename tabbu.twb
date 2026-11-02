@@ -1,0 +1,2024 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20263.26.1022.1645                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='d7aabfb87a742b3bd8de70d8141f6f7ab51d968dd15a707e565da73195b7b4be' _.fcp.WorkbookFingerprinting.true...creator-author-id='d7aabfb87a742b3bd8de70d8141f6f7ab51d968dd15a707e565da73195b7b4be' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='d7aabfb87a742b3bd8de70d8141f6f7ab51d968dd15a707e565da73195b7b4be' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='d7aabfb87a742b3bd8de70d8141f6f7ab51d968dd15a707e565da73195b7b4be' original-version='18.1' source-build='2026.3.0 (20263.26.1022.1645)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='global_fuel_prices_Dataset' inline='true' name='federated.16r7sr803l30g01dfva380u94qpw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='global_fuel_prices_Dataset' name='textscan.1wxyzts12klkd41d763i41hjbdhl'>
+            <connection class='textscan' directory='C:/Users/sanid/Downloads' filename='global_fuel_prices_Dataset.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1wxyzts12klkd41d763i41hjbdhl' name='global_fuel_prices_Dataset.csv' table='[global_fuel_prices_Dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='date' name='date' ordinal='0' />
+            <column datatype='string' name='country' ordinal='1' />
+            <column datatype='string' name='region' ordinal='2' />
+            <column datatype='string' name='income_level' ordinal='3' />
+            <column datatype='string' name='subsidy_level' ordinal='4' />
+            <column datatype='real' name='petrol_usd_liter' ordinal='5' />
+            <column datatype='real' name='diesel_usd_liter' ordinal='6' />
+            <column datatype='real' name='lpg_usd_liter' ordinal='7' />
+            <column datatype='real' name='brent_crude_usd' ordinal='8' />
+            <column datatype='real' name='tax_percentage' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[global_fuel_prices_Dataset.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[global_fuel_prices_Dataset.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[global_fuel_prices_Dataset.csv_6CC863D7D4EB4857BDAAD11A7FD3F697]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[global_fuel_prices_Dataset.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[global_fuel_prices_Dataset.csv_6CC863D7D4EB4857BDAAD11A7FD3F697]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[region]</local-name>
+            <parent-name>[global_fuel_prices_Dataset.csv]</parent-name>
+            <remote-alias>region</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[global_fuel_prices_Dataset.csv_6CC863D7D4EB4857BDAAD11A7FD3F697]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>income_level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[income_level]</local-name>
+            <parent-name>[global_fuel_prices_Dataset.csv]</parent-name>
+            <remote-alias>income_level</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[global_fuel_prices_Dataset.csv_6CC863D7D4EB4857BDAAD11A7FD3F697]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subsidy_level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[subsidy_level]</local-name>
+            <parent-name>[global_fuel_prices_Dataset.csv]</parent-name>
+            <remote-alias>subsidy_level</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[global_fuel_prices_Dataset.csv_6CC863D7D4EB4857BDAAD11A7FD3F697]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>petrol_usd_liter</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[petrol_usd_liter]</local-name>
+            <parent-name>[global_fuel_prices_Dataset.csv]</parent-name>
+            <remote-alias>petrol_usd_liter</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[global_fuel_prices_Dataset.csv_6CC863D7D4EB4857BDAAD11A7FD3F697]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>diesel_usd_liter</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[diesel_usd_liter]</local-name>
+            <parent-name>[global_fuel_prices_Dataset.csv]</parent-name>
+            <remote-alias>diesel_usd_liter</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[global_fuel_prices_Dataset.csv_6CC863D7D4EB4857BDAAD11A7FD3F697]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lpg_usd_liter</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lpg_usd_liter]</local-name>
+            <parent-name>[global_fuel_prices_Dataset.csv]</parent-name>
+            <remote-alias>lpg_usd_liter</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[global_fuel_prices_Dataset.csv_6CC863D7D4EB4857BDAAD11A7FD3F697]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>brent_crude_usd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[brent_crude_usd]</local-name>
+            <parent-name>[global_fuel_prices_Dataset.csv]</parent-name>
+            <remote-alias>brent_crude_usd</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[global_fuel_prices_Dataset.csv_6CC863D7D4EB4857BDAAD11A7FD3F697]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tax_percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tax_percentage]</local-name>
+            <parent-name>[global_fuel_prices_Dataset.csv]</parent-name>
+            <remote-alias>tax_percentage</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[global_fuel_prices_Dataset.csv_6CC863D7D4EB4857BDAAD11A7FD3F697]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Avg Fuel Price' datatype='real' name='[Calculation_1530306394390528]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='([petrol_usd_liter] + [diesel_usd_liter] + [lpg_usd_liter]) / 3' />
+      </column>
+      <column caption='Diesel Volatility' datatype='real' name='[Calculation_1530306766057473]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='STDEV([diesel_usd_liter]) / AVG([diesel_usd_liter])' />
+      </column>
+      <column caption='global_fuel_prices_Dataset.csv' datatype='table' name='[__tableau_internal_object_id__].[global_fuel_prices_Dataset.csv_6CC863D7D4EB4857BDAAD11A7FD3F697]' role='measure' type='quantitative' />
+      <column caption='Brent Crude Usd' datatype='real' name='[brent_crude_usd]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Diesel Usd Liter' datatype='real' name='[diesel_usd_liter]' role='measure' type='quantitative' />
+      <column caption='Income Level' datatype='string' name='[income_level]' role='dimension' type='nominal' />
+      <column caption='Lpg Usd Liter' datatype='real' name='[lpg_usd_liter]' role='measure' type='quantitative' />
+      <column caption='Petrol Usd Liter' datatype='real' name='[petrol_usd_liter]' role='measure' type='quantitative' />
+      <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+      <column caption='Subsidy Level' datatype='string' name='[subsidy_level]' role='dimension' type='nominal' />
+      <column caption='Tax Percentage' datatype='real' name='[tax_percentage]' role='measure' type='quantitative' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/sanid/AppData/Local/Temp/TableauTemp/#TableauTemp_1hpi9rm1lgov8f1eccy631eeq6v1.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/29/2026 05:47:53 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>global_fuel_prices_Dataset.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>529</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[global_fuel_prices_Dataset.csv_6CC863D7D4EB4857BDAAD11A7FD3F697]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>country</remote-alias>
+              <ordinal>1</ordinal>
+              <family>global_fuel_prices_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>84</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[global_fuel_prices_Dataset.csv_6CC863D7D4EB4857BDAAD11A7FD3F697]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>region</remote-alias>
+              <ordinal>2</ordinal>
+              <family>global_fuel_prices_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[global_fuel_prices_Dataset.csv_6CC863D7D4EB4857BDAAD11A7FD3F697]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>income_level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[income_level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>income_level</remote-alias>
+              <ordinal>3</ordinal>
+              <family>global_fuel_prices_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[global_fuel_prices_Dataset.csv_6CC863D7D4EB4857BDAAD11A7FD3F697]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>subsidy_level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[subsidy_level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>subsidy_level</remote-alias>
+              <ordinal>4</ordinal>
+              <family>global_fuel_prices_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[global_fuel_prices_Dataset.csv_6CC863D7D4EB4857BDAAD11A7FD3F697]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>petrol_usd_liter</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[petrol_usd_liter]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>petrol_usd_liter</remote-alias>
+              <ordinal>5</ordinal>
+              <family>global_fuel_prices_Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5672</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[global_fuel_prices_Dataset.csv_6CC863D7D4EB4857BDAAD11A7FD3F697]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>diesel_usd_liter</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[diesel_usd_liter]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>diesel_usd_liter</remote-alias>
+              <ordinal>6</ordinal>
+              <family>global_fuel_prices_Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5475</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[global_fuel_prices_Dataset.csv_6CC863D7D4EB4857BDAAD11A7FD3F697]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lpg_usd_liter</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[lpg_usd_liter]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>lpg_usd_liter</remote-alias>
+              <ordinal>7</ordinal>
+              <family>global_fuel_prices_Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4988</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[global_fuel_prices_Dataset.csv_6CC863D7D4EB4857BDAAD11A7FD3F697]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>brent_crude_usd</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[brent_crude_usd]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>brent_crude_usd</remote-alias>
+              <ordinal>8</ordinal>
+              <family>global_fuel_prices_Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>418</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[global_fuel_prices_Dataset.csv_6CC863D7D4EB4857BDAAD11A7FD3F697]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tax_percentage</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[tax_percentage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tax_percentage</remote-alias>
+              <ordinal>9</ordinal>
+              <family>global_fuel_prices_Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1317</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[global_fuel_prices_Dataset.csv_6CC863D7D4EB4857BDAAD11A7FD3F697]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:region:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Africa&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;North America&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Middle East&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;South America&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Europe&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Oceania&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Asia&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <object-graph>
+        <objects>
+          <object caption='global_fuel_prices_Dataset.csv' id='global_fuel_prices_Dataset.csv_6CC863D7D4EB4857BDAAD11A7FD3F697'>
+            <properties context=''>
+              <relation connection='textscan.1wxyzts12klkd41d763i41hjbdhl' name='global_fuel_prices_Dataset.csv' table='[global_fuel_prices_Dataset#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='date' name='date' ordinal='0' />
+                  <column datatype='string' name='country' ordinal='1' />
+                  <column datatype='string' name='region' ordinal='2' />
+                  <column datatype='string' name='income_level' ordinal='3' />
+                  <column datatype='string' name='subsidy_level' ordinal='4' />
+                  <column datatype='real' name='petrol_usd_liter' ordinal='5' />
+                  <column datatype='real' name='diesel_usd_liter' ordinal='6' />
+                  <column datatype='real' name='lpg_usd_liter' ordinal='7' />
+                  <column datatype='real' name='brent_crude_usd' ordinal='8' />
+                  <column datatype='real' name='tax_percentage' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_A26B1B3B53144AE08EABBA1E2C9F4A87]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Global Fuel Dashboard' type='sheet' worksheet='1 Tax Map' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Global Fuel Dashboard' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='1 Tax Map'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Average Fuel Tax Rate by Country</run>
+            <run>&lt;</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>1 Tax Map</run>
+            <run>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='global_fuel_prices_Dataset' name='federated.16r7sr803l30g01dfva380u94qpw' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.16r7sr803l30g01dfva380u94qpw'>
+            <column-instance column='[region]' derivation='Attribute' name='[attr:region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[tax_percentage]' derivation='Avg' name='[avg:tax_percentage:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column caption='Tax Percentage' datatype='real' name='[tax_percentage]' role='measure' type='quantitative' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16r7sr803l30g01dfva380u94qpw].[yr:date:ok]'>
+            <groupfilter function='level-members' level='[yr:date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.16r7sr803l30g01dfva380u94qpw].[yr:date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.16r7sr803l30g01dfva380u94qpw].[Longitude (generated)]' field-type='quantitative' max='27495651.901759773' min='-17432200.747938797' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.16r7sr803l30g01dfva380u94qpw].[Latitude (generated)]' field-type='quantitative' max='14093707.362141673' min='-14005768.022774082' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.16r7sr803l30g01dfva380u94qpw].[avg:tax_percentage:qk]' num-steps='5' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.16r7sr803l30g01dfva380u94qpw].[avg:tax_percentage:qk]' />
+              <lod column='[federated.16r7sr803l30g01dfva380u94qpw].[none:country:nk]' />
+              <lod column='[federated.16r7sr803l30g01dfva380u94qpw].[none:country:nk]' />
+              <tooltip column='[federated.16r7sr803l30g01dfva380u94qpw].[attr:region:nk]' />
+              <geometry column='[federated.16r7sr803l30g01dfva380u94qpw].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.16r7sr803l30g01dfva380u94qpw].[Latitude (generated)]</rows>
+        <cols>[federated.16r7sr803l30g01dfva380u94qpw].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{46CDD9AE-3510-4DF1-B2B7-DAF444903269}' />
+    </worksheet>
+    <worksheet name='2 Tax vs Subsidy'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='global_fuel_prices_Dataset' name='federated.16r7sr803l30g01dfva380u94qpw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16r7sr803l30g01dfva380u94qpw'>
+            <column-instance column='[tax_percentage]' derivation='Avg' name='[avg:tax_percentage:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[subsidy_level]' derivation='None' name='[none:subsidy_level:nk]' pivot='key' type='nominal' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column caption='Subsidy Level' datatype='string' name='[subsidy_level]' role='dimension' type='nominal' />
+            <column caption='Tax Percentage' datatype='real' name='[tax_percentage]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.16r7sr803l30g01dfva380u94qpw].[none:region:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.16r7sr803l30g01dfva380u94qpw].[avg:tax_percentage:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.16r7sr803l30g01dfva380u94qpw].[none:subsidy_level:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16r7sr803l30g01dfva380u94qpw].[avg:tax_percentage:qk]</rows>
+        <cols>[federated.16r7sr803l30g01dfva380u94qpw].[none:region:nk]</cols>
+      </table>
+      <simple-id uuid='{4F02E517-4896-4E31-9127-CD0CBE0B3C95}' />
+    </worksheet>
+    <worksheet name='3 Subsidy vs Price'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='global_fuel_prices_Dataset' name='federated.16r7sr803l30g01dfva380u94qpw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16r7sr803l30g01dfva380u94qpw'>
+            <column caption='Avg Fuel Price' datatype='real' name='[Calculation_1530306394390528]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='([petrol_usd_liter] + [diesel_usd_liter] + [lpg_usd_liter]) / 3' />
+            </column>
+            <column-instance column='[Calculation_1530306394390528]' derivation='Avg' name='[avg:Calculation_1530306394390528:qk]' pivot='key' type='quantitative' />
+            <column caption='Diesel Usd Liter' datatype='real' name='[diesel_usd_liter]' role='measure' type='quantitative' />
+            <column caption='Lpg Usd Liter' datatype='real' name='[lpg_usd_liter]' role='measure' type='quantitative' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[subsidy_level]' derivation='None' name='[none:subsidy_level:nk]' pivot='key' type='nominal' />
+            <column caption='Petrol Usd Liter' datatype='real' name='[petrol_usd_liter]' role='measure' type='quantitative' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column caption='Subsidy Level' datatype='string' name='[subsidy_level]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.16r7sr803l30g01dfva380u94qpw].[none:subsidy_level:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Low&quot;</bucket>
+              <bucket>&quot;Medium&quot;</bucket>
+              <bucket>&quot;High&quot;</bucket>
+              <bucket>&quot;Very High&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.16r7sr803l30g01dfva380u94qpw].[none:region:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16r7sr803l30g01dfva380u94qpw].[avg:Calculation_1530306394390528:qk]</rows>
+        <cols>[federated.16r7sr803l30g01dfva380u94qpw].[none:subsidy_level:nk]</cols>
+      </table>
+      <simple-id uuid='{0C98A52D-E403-4930-88A6-BE7A0442DAE7}' />
+    </worksheet>
+    <worksheet name='4 Diesel Forecast.'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='global_fuel_prices_Dataset' name='federated.16r7sr803l30g01dfva380u94qpw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16r7sr803l30g01dfva380u94qpw'>
+            <column-instance column='[diesel_usd_liter]' derivation='Avg' name='[avg:diesel_usd_liter:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Diesel Usd Liter' datatype='real' name='[diesel_usd_liter]' role='measure' type='quantitative' />
+            <column-instance column='[diesel_usd_liter]' derivation='Avg' forecast-column-base='[avg:diesel_usd_liter:qk]' forecast-column-type='forecast-value' name='[fVal:avg:diesel_usd_liter:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column-instance column='[date]' derivation='Month-Trunc' name='[tmn:date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.16r7sr803l30g01dfva380u94qpw].[none:region:nk]' />
+              <color column='[federated.16r7sr803l30g01dfva380u94qpw].[none:Forecast Indicator:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.16r7sr803l30g01dfva380u94qpw].[fVal:avg:diesel_usd_liter:qk]</rows>
+        <cols>[federated.16r7sr803l30g01dfva380u94qpw].[tmn:date:qk]</cols>
+        <forecast-specification auto-forecast-agg='true' band-confidence-level='95.000000' enabled='true' fill-type='fill-missing' ignore-last='1' model-type='auto-season' range-periods='Month-Trunc' range-size='12' range-type='next' show-prediction-bands='true' />
+      </table>
+      <simple-id uuid='{D05F7291-E73E-4C61-AC8F-59ACA822710D}' />
+    </worksheet>
+    <worksheet name='5 Top 10 Countries'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='global_fuel_prices_Dataset' name='federated.16r7sr803l30g01dfva380u94qpw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16r7sr803l30g01dfva380u94qpw'>
+            <column-instance column='[diesel_usd_liter]' derivation='Avg' name='[avg:diesel_usd_liter:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Diesel Usd Liter' datatype='real' name='[diesel_usd_liter]' role='measure' type='quantitative' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16r7sr803l30g01dfva380u94qpw].[none:country:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='AVG([diesel_usd_liter])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.16r7sr803l30g01dfva380u94qpw].[none:country:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.16r7sr803l30g01dfva380u94qpw].[avg:diesel_usd_liter:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.16r7sr803l30g01dfva380u94qpw].[none:country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.16r7sr803l30g01dfva380u94qpw].[none:region:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16r7sr803l30g01dfva380u94qpw].[none:country:nk]</rows>
+        <cols>[federated.16r7sr803l30g01dfva380u94qpw].[avg:diesel_usd_liter:qk]</cols>
+      </table>
+      <simple-id uuid='{F204531D-D308-4872-86CB-048605468CD8}' />
+    </worksheet>
+    <worksheet name='6 Volatility Heatmap'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='global_fuel_prices_Dataset' name='federated.16r7sr803l30g01dfva380u94qpw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16r7sr803l30g01dfva380u94qpw'>
+            <column caption='Diesel Volatility' datatype='real' name='[Calculation_1530306766057473]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='STDEV([diesel_usd_liter]) / AVG([diesel_usd_liter])' />
+            </column>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Diesel Usd Liter' datatype='real' name='[diesel_usd_liter]' role='measure' type='quantitative' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1530306766057473]' derivation='User' name='[usr:Calculation_1530306766057473:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.16r7sr803l30g01dfva380u94qpw].[usr:Calculation_1530306766057473:qk]' palette='red_green_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.16r7sr803l30g01dfva380u94qpw].[usr:Calculation_1530306766057473:qk]' />
+              <text column='[federated.16r7sr803l30g01dfva380u94qpw].[usr:Calculation_1530306766057473:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16r7sr803l30g01dfva380u94qpw].[none:region:nk]</rows>
+        <cols>[federated.16r7sr803l30g01dfva380u94qpw].[yr:date:ok]</cols>
+      </table>
+      <simple-id uuid='{0FD8B78D-1F44-4F00-B44F-11A8EC3D40B7}' />
+    </worksheet>
+    <worksheet name='7 Tax by Income'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='global_fuel_prices_Dataset' name='federated.16r7sr803l30g01dfva380u94qpw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16r7sr803l30g01dfva380u94qpw'>
+            <column-instance column='[tax_percentage]' derivation='Avg' name='[avg:tax_percentage:qk]' pivot='key' type='quantitative' />
+            <column caption='Income Level' datatype='string' name='[income_level]' role='dimension' type='nominal' />
+            <column-instance column='[income_level]' derivation='None' name='[none:income_level:nk]' pivot='key' type='nominal' />
+            <column caption='Tax Percentage' datatype='real' name='[tax_percentage]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.16r7sr803l30g01dfva380u94qpw].[none:income_level:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16r7sr803l30g01dfva380u94qpw].[avg:tax_percentage:qk]</rows>
+        <cols>[federated.16r7sr803l30g01dfva380u94qpw].[none:income_level:nk]</cols>
+      </table>
+      <simple-id uuid='{B4AC2F82-048C-4C24-AD1B-644673D526B3}' />
+    </worksheet>
+    <worksheet name='8 Subsidy by Income'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='global_fuel_prices_Dataset' name='federated.16r7sr803l30g01dfva380u94qpw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16r7sr803l30g01dfva380u94qpw'>
+            <column caption='global_fuel_prices_Dataset.csv' datatype='table' name='[__tableau_internal_object_id__].[global_fuel_prices_Dataset.csv_6CC863D7D4EB4857BDAAD11A7FD3F697]' role='measure' type='quantitative' />
+            <column caption='Income Level' datatype='string' name='[income_level]' role='dimension' type='nominal' />
+            <column-instance column='[income_level]' derivation='None' name='[none:income_level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[subsidy_level]' derivation='None' name='[none:subsidy_level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[__tableau_internal_object_id__].[global_fuel_prices_Dataset.csv_6CC863D7D4EB4857BDAAD11A7FD3F697]' derivation='Count' name='[pcto:cnt:global_fuel_prices_Dataset.csv_6CC863D7D4EB4857BDAAD11A7FD3F697:qk:3]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.16r7sr803l30g01dfva380u94qpw].[subsidy_level]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+            <column caption='Subsidy Level' datatype='string' name='[subsidy_level]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.16r7sr803l30g01dfva380u94qpw].[none:subsidy_level:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16r7sr803l30g01dfva380u94qpw].[pcto:cnt:global_fuel_prices_Dataset.csv_6CC863D7D4EB4857BDAAD11A7FD3F697:qk:3]</rows>
+        <cols>[federated.16r7sr803l30g01dfva380u94qpw].[none:income_level:nk]</cols>
+      </table>
+      <simple-id uuid='{3F67C12B-8ADA-4A54-9D42-B2A1B4BD3822}' />
+    </worksheet>
+    <worksheet name='9 Price by Income'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='global_fuel_prices_Dataset' name='federated.16r7sr803l30g01dfva380u94qpw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16r7sr803l30g01dfva380u94qpw'>
+            <column-instance column='[diesel_usd_liter]' derivation='Avg' name='[avg:diesel_usd_liter:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[lpg_usd_liter]' derivation='Avg' name='[avg:lpg_usd_liter:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[petrol_usd_liter]' derivation='Avg' name='[avg:petrol_usd_liter:qk]' pivot='key' type='quantitative' />
+            <column caption='Diesel Usd Liter' datatype='real' name='[diesel_usd_liter]' role='measure' type='quantitative' />
+            <column caption='Income Level' datatype='string' name='[income_level]' role='dimension' type='nominal' />
+            <column caption='Lpg Usd Liter' datatype='real' name='[lpg_usd_liter]' role='measure' type='quantitative' />
+            <column-instance column='[income_level]' derivation='None' name='[none:income_level:nk]' pivot='key' type='nominal' />
+            <column caption='Petrol Usd Liter' datatype='real' name='[petrol_usd_liter]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16r7sr803l30g01dfva380u94qpw].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.16r7sr803l30g01dfva380u94qpw].[avg:diesel_usd_liter:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.16r7sr803l30g01dfva380u94qpw].[avg:lpg_usd_liter:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.16r7sr803l30g01dfva380u94qpw].[avg:petrol_usd_liter:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.16r7sr803l30g01dfva380u94qpw].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.16r7sr803l30g01dfva380u94qpw].[Multiple Values]' palette='orange_blue_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.16r7sr803l30g01dfva380u94qpw].[Multiple Values]' />
+              <text column='[federated.16r7sr803l30g01dfva380u94qpw].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16r7sr803l30g01dfva380u94qpw].[none:income_level:nk]</rows>
+        <cols>[federated.16r7sr803l30g01dfva380u94qpw].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{1DE53F67-4798-40F9-AD94-4597F1A1255C}' />
+    </worksheet>
+    <worksheet name='Top 10 Cheapest Diesel Markets'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='global_fuel_prices_Dataset' name='federated.16r7sr803l30g01dfva380u94qpw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16r7sr803l30g01dfva380u94qpw'>
+            <column-instance column='[diesel_usd_liter]' derivation='Avg' name='[avg:diesel_usd_liter:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Diesel Usd Liter' datatype='real' name='[diesel_usd_liter]' role='measure' type='quantitative' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16r7sr803l30g01dfva380u94qpw].[none:country:nk]'>
+            <groupfilter count='10' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='AVG([diesel_usd_liter])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.16r7sr803l30g01dfva380u94qpw].[none:country:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.16r7sr803l30g01dfva380u94qpw].[avg:diesel_usd_liter:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.16r7sr803l30g01dfva380u94qpw].[none:country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.16r7sr803l30g01dfva380u94qpw].[none:region:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16r7sr803l30g01dfva380u94qpw].[none:country:nk]</rows>
+        <cols>[federated.16r7sr803l30g01dfva380u94qpw].[avg:diesel_usd_liter:qk]</cols>
+      </table>
+      <simple-id uuid='{859C6514-AB41-43F7-8038-EABF93A3EB0B}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Global Fuel Dashboard'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='global_fuel_prices_Dataset' name='federated.16r7sr803l30g01dfva380u94qpw' />
+      </datasources>
+      <datasource-dependencies datasource='federated.16r7sr803l30g01dfva380u94qpw'>
+        <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+        <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98120' id='7' param='horz' type-v2='layout-flow' w='99034' x='483' y='940'>
+            <zone h='98120' id='5' type-v2='layout-basic' w='89378' x='483' y='940'>
+              <zone h='49060' id='3' name='1 Tax Map' w='35184' x='483' y='940'>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24530' id='9' name='4 Diesel Forecast.' w='35184' x='483' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24530' id='11' name='7 Tax by Income' w='35184' x='483' y='74530'>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49060' id='13' name='2 Tax vs Subsidy' w='27640' x='35667' y='940'>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49060' id='15' name='3 Subsidy vs Price' w='26554' x='63307' y='940'>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24530' id='17' name='5 Top 10 Countries' w='27640' x='35667' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24530' id='18' name='6 Volatility Heatmap' w='26554' x='63307' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24530' id='20' name='8 Subsidy by Income' w='27640' x='35667' y='74530'>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24530' id='21' name='9 Price by Income' w='26554' x='63307' y='74530'>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98120' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='9656' x='89861' y='940'>
+              <zone h='8578' id='8' name='1 Tax Map' pane-specification-id='0' param='[federated.16r7sr803l30g01dfva380u94qpw].[avg:tax_percentage:qk]' type-v2='color' w='9656' x='89861' y='940'>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='17940' id='10' name='4 Diesel Forecast.' pane-specification-id='0' param='[federated.16r7sr803l30g01dfva380u94qpw].[none:region:nk]&#10;[federated.16r7sr803l30g01dfva380u94qpw].[none:Forecast Indicator:nk]' type-v2='color' w='9656' x='89861' y='9518'>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='10928' id='12' name='7 Tax by Income' pane-specification-id='0' param='[federated.16r7sr803l30g01dfva380u94qpw].[none:income_level:nk]' type-v2='color' w='9656' x='89861' y='27458'>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='13396' id='14' name='2 Tax vs Subsidy' pane-specification-id='0' param='[federated.16r7sr803l30g01dfva380u94qpw].[none:subsidy_level:nk]' type-v2='color' w='9656' x='89861' y='38386'>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='17940' id='16' name='3 Subsidy vs Price' pane-specification-id='0' param='[federated.16r7sr803l30g01dfva380u94qpw].[none:region:nk]' type-v2='color' w='9656' x='89861' y='51782'>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8578' id='19' name='6 Volatility Heatmap' pane-specification-id='0' param='[federated.16r7sr803l30g01dfva380u94qpw].[usr:Calculation_1530306766057473:qk]' type-v2='color' w='9656' x='89861' y='69722'>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='2820' id='22' name='9 Price by Income' pane-specification-id='0' param='[federated.16r7sr803l30g01dfva380u94qpw].[Multiple Values]' type-v2='color' w='9656' x='89861' y='78300'>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='17940' id='23' name='1 Tax Map' param='[federated.16r7sr803l30g01dfva380u94qpw].[yr:date:ok]' type-v2='filter' values='database' w='9656' x='89861' y='81120'>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#444444' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2600' minheight='2600' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='25' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98120' id='24' param='vert' type-v2='layout-flow' w='99034' x='483' y='940'>
+                <zone h='20644' id='23' mode='checkdropdown' name='1 Tax Map' param='[federated.16r7sr803l30g01dfva380u94qpw].[yr:date:ok]' type-v2='filter' values='database' w='9656' x='89861' y='78416'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49060' id='3' is-fixed='true' name='1 Tax Map' w='35184' x='483' y='940'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8578' id='8' name='1 Tax Map' pane-specification-id='0' param='[federated.16r7sr803l30g01dfva380u94qpw].[avg:tax_percentage:qk]' type-v2='color' w='9656' x='89861' y='940'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49060' id='13' is-fixed='true' name='2 Tax vs Subsidy' w='27640' x='35667' y='940'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='13396' id='14' name='2 Tax vs Subsidy' pane-specification-id='0' param='[federated.16r7sr803l30g01dfva380u94qpw].[none:subsidy_level:nk]' type-v2='color' w='9656' x='89861' y='32980'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49060' id='15' is-fixed='true' name='3 Subsidy vs Price' w='26554' x='63307' y='940'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='20642' id='16' name='3 Subsidy vs Price' pane-specification-id='0' param='[federated.16r7sr803l30g01dfva380u94qpw].[none:region:nk]' type-v2='color' w='9656' x='89861' y='46376'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='188' h='24530' id='9' is-fixed='true' name='4 Diesel Forecast.' w='35184' x='483' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='20642' id='10' name='4 Diesel Forecast.' pane-specification-id='0' param='[federated.16r7sr803l30g01dfva380u94qpw].[none:region:nk]&#10;[federated.16r7sr803l30g01dfva380u94qpw].[none:Forecast Indicator:nk]' type-v2='color' w='9656' x='89861' y='9518'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='188' h='24530' id='17' is-fixed='true' name='5 Top 10 Countries' w='27640' x='35667' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='188' h='24530' id='18' is-fixed='true' name='6 Volatility Heatmap' w='26554' x='63307' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8578' id='19' name='6 Volatility Heatmap' pane-specification-id='0' param='[federated.16r7sr803l30g01dfva380u94qpw].[usr:Calculation_1530306766057473:qk]' type-v2='color' w='9656' x='89861' y='67018'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='188' h='24530' id='11' is-fixed='true' name='7 Tax by Income' w='35184' x='483' y='74530'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='2820' id='12' name='7 Tax by Income' pane-specification-id='0' param='[federated.16r7sr803l30g01dfva380u94qpw].[none:income_level:nk]' type-v2='color' w='9656' x='89861' y='30160'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='188' h='24530' id='20' is-fixed='true' name='8 Subsidy by Income' w='27640' x='35667' y='74530'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='188' h='24530' id='21' is-fixed='true' name='9 Price by Income' w='26554' x='63307' y='74530'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='2820' id='22' name='9 Price by Income' pane-specification-id='0' param='[federated.16r7sr803l30g01dfva380u94qpw].[Multiple Values]' type-v2='color' w='9656' x='89861' y='75596'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#444444' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C82F441B-FB1E-4997-AA1C-29466BE26E17}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='1 Tax Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16r7sr803l30g01dfva380u94qpw].[avg:tax_percentage:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{819F2B90-16F6-4675-8C74-B23383311ED1}' />
+    </window>
+    <window class='worksheet' name='2 Tax vs Subsidy'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16r7sr803l30g01dfva380u94qpw].[none:subsidy_level:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{87704685-1C80-4570-A968-84F29FC38B9E}' />
+    </window>
+    <window class='worksheet' name='3 Subsidy vs Price'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16r7sr803l30g01dfva380u94qpw].[none:region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D8CF35BA-B9D3-4B04-B7FE-C7C75F1613A8}' />
+    </window>
+    <window class='worksheet' name='4 Diesel Forecast.'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16r7sr803l30g01dfva380u94qpw].[none:region:nk]&#10;[federated.16r7sr803l30g01dfva380u94qpw].[none:Forecast Indicator:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{09B3AC43-A074-4351-A47A-704C556CB2E0}' />
+    </window>
+    <window class='worksheet' name='5 Top 10 Countries'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16r7sr803l30g01dfva380u94qpw].[none:region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4399F049-344D-4A5A-A2B1-86D3A7AED608}' />
+    </window>
+    <window class='worksheet' name='Top 10 Cheapest Diesel Markets'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16r7sr803l30g01dfva380u94qpw].[none:region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EFAEB2DF-7009-4626-87AD-61BC7064C05C}' />
+    </window>
+    <window class='worksheet' name='6 Volatility Heatmap'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16r7sr803l30g01dfva380u94qpw].[usr:Calculation_1530306766057473:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6820B312-21FB-4F1E-A55A-FFC27AC37E62}' />
+    </window>
+    <window class='worksheet' name='7 Tax by Income'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16r7sr803l30g01dfva380u94qpw].[none:income_level:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B184DEBD-0934-476C-BD88-D38F6A0F7FA6}' />
+    </window>
+    <window class='worksheet' name='8 Subsidy by Income'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16r7sr803l30g01dfva380u94qpw].[none:subsidy_level:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6D80E58C-8D65-45AF-B0E7-7EF27F1B1EBF}' />
+    </window>
+    <window class='worksheet' name='9 Price by Income'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16r7sr803l30g01dfva380u94qpw].[Multiple Values]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C6CD8B8A-955D-4DCD-94D0-FAABEA986347}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Global Fuel Dashboard'>
+      <viewpoints>
+        <viewpoint name='1 Tax Map'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='2 Tax vs Subsidy'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='3 Subsidy vs Price'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='4 Diesel Forecast.'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='5 Top 10 Countries' />
+        <viewpoint name='6 Volatility Heatmap' />
+        <viewpoint name='7 Tax by Income'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='8 Subsidy by Income'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='9 Price by Income' />
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{FF61D3F3-E471-4070-9011-64FF55F3D5D7}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Global Fuel Dashboard' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
